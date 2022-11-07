@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ComicsController extends Controller
 {
-    /**
+    /** PRIMA FUNZIONE VISTA
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -37,7 +37,7 @@ class ComicsController extends Controller
         //
     }
 
-    /**
+    /** SECONDA FUNZIONE VISTA
      * Display the specified resource.
      *
      * @param  int  $id
