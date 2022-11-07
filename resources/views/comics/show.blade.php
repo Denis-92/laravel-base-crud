@@ -20,7 +20,14 @@
     <p>
         A soli:
         {{ $comic->price }}
+        <span> €</span>
     </p>
+
+    <h2>
+        <a href="{{ route('comics.index') }}">
+            TORNA in Index
+        </a>
+    </h2>
 </body>
 
 </html>

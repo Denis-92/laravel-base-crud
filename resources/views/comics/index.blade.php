@@ -11,9 +11,10 @@
     @foreach ($comics as $comic)
         <div>
             <a href="/comics/{{ $comic->id }}">
-                {{ $comic->title }}
+                <img src="{{ $comic->thumb }}" alt="Photo of {{ $comic->title }}">
+                <div>{{ $comic->title }}</div>
             </a>
-            <p>test ciao</p>
+            <p>test content</p>
         </div>
     @endforeach
 </body>
