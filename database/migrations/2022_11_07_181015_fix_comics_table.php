@@ -15,6 +15,7 @@ class FixComicsTable extends Migration
     {
         Schema::table('Comic', function (Blueprint $table) {
             //
+            $table->string('series', 70)->change();
         });
     }
 
@@ -27,6 +28,7 @@ class FixComicsTable extends Migration
     {
         Schema::table('Comic', function (Blueprint $table) {
             //
+            $table->string('series', 20)->change();
         });
     }
 }
