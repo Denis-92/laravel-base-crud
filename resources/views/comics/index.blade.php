@@ -10,7 +10,9 @@
 <body>
     @foreach ($comics as $comic)
         <div>
-            {{ $comic->title }}
+            <a href="/comics/{{ $comic->id }}">
+                {{ $comic->title }}
+            </a>
             <p>test ciao</p>
         </div>
     @endforeach
