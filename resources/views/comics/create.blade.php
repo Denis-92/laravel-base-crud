@@ -10,7 +10,7 @@
 
 <body>
 
-    <form method="post">
+    <form method="post" action="{{ route('comics.store') }}">
         <div>
             <label for="title">
                 Inserisci titolo...
@@ -54,10 +54,10 @@
         </div>
 
         <div>
-            <label for="">
-
+            <label for="type">
+                Inserire tipo del fumetto...
             </label>
-            <input type="text" name="" id="">
+            <input type="text" name="type" id="type">
         </div>
     </form>
 
