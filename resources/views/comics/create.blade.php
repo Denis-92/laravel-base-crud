@@ -26,31 +26,31 @@
         </div>
 
         <div>
-            <label for="">
-
+            <label for="thumb">
+                Inserire url della thumbnail...
             </label>
-            <input type="text" name="" id="">
+            <input type="text" name="thumb" id="thumb">
         </div>
 
         <div>
-            <label for="">
-
+            <label for="price">
+                Inserire prezzo...
             </label>
-            <input type="text" name="" id="">
+            <input type="text" name="price" id="price">
         </div>
 
         <div>
-            <label for="">
-
+            <label for="series">
+                Inserire serie del fumetto...
             </label>
-            <input type="text" name="" id="">
+            <input type="text" name="series" id="series">
         </div>
 
         <div>
-            <label for="">
-
+            <label for="sale_date">
+                Inserire data di pubblicazione del fumetto...
             </label>
-            <input type="text" name="" id="">
+            <input type="text" name="sale_date" id="sale_date">
         </div>
 
         <div>
