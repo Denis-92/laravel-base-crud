@@ -48,23 +48,22 @@ class ComicsController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    // questo è il controller di default
+    /* controller show
      public function show($id)
     {
         //
         $comic = Comic::find($id);
         return view('comics.show', compact('comic'));
     }
+    */
 
 
-    /* il seguente è un modo di scrivere il controller con sintassi più breve
-        MA NON MI FUNZIONA... XD
-    public function show(Comic $id)
+    // controller show scritto in forma contratta
+    public function show(Comic $comic)
     {
         //
         return view('comics.show', compact('comic'));
     }
-    */
 
     /**
      * Show the form for editing the specified resource.
