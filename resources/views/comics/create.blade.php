@@ -10,7 +10,14 @@
 
 <body>
 
-    <form action="" method="post"></form>
+    <form method="post">
+        <div>
+            <label for="">
+
+            </label>
+            <input type="text" name="" id="">
+        </div>
+    </form>
 
 </body>
 
