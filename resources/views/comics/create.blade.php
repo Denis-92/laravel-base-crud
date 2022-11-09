@@ -11,6 +11,7 @@
 <body>
 
     <form method="post" action="{{ route('comics.store') }}">
+        @csrf
         <div>
             <label for="title">
                 Inserisci titolo...
@@ -19,10 +20,11 @@
         </div>
 
         <div>
-            <textarea name="description" cols="25" rows="15">
+            <label for="description">
                 Inserisci descrizione...
-            </textarea>
-            <input type="text" name="description" id="description">
+            </label>
+            <textarea name="description" cols="25" rows="5"></textarea>
+            <!--<input type="text" name="description" id="description">-->
         </div>
 
         <div>
