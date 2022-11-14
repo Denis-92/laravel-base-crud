@@ -24,6 +24,12 @@
     </p>
 
     <h2>
+        <a href="{{ route('comics.edit', $comic->id) }}">
+            Modifica dati
+        </a>
+    </h2>
+
+    <h2>
         <a href="{{ route('comics.index') }}">
             TORNA in Index
         </a>
