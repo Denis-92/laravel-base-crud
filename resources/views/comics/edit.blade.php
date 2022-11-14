@@ -25,7 +25,7 @@
             <label for="description">
                 Inserisci descrizione...
             </label>
-            <textarea name="description" cols="25" rows="5" value="{{ $comic->description }}"></textarea>
+            <textarea name="description" cols="25" rows="5">{{ $comic->description }}</textarea>
         </div>
 
         <div>
