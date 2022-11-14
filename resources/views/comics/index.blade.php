@@ -15,6 +15,13 @@
                 <img src="{{ $comic->thumb }}" alt="Photo of {{ $comic->title }}">
                 <div>{{ $comic->title }}</div>
             </a>
+
+            <form action="{{ route('comics.destroy', $comic->id) }}" method="post">
+                @csrf
+                @method('DELETE')
+                <input type="submit" value="Cancella" class="delete-button">
+            </form>
+            <hr>
         </div>
     @endforeach
 </body>
