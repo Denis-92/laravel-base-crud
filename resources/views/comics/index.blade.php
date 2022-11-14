@@ -8,6 +8,12 @@
 </head>
 
 <body>
+    <div>
+        <h2>
+            <a href="{{ route('comics.create') }}">Crea record</a>
+        </h2>
+        <hr>
+    </div>
     @foreach ($comics as $comic)
         <div>
             {{-- <!-- <a href="/comics/{{ $comic->id }}"> --> --}}
