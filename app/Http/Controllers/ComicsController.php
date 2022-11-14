@@ -90,9 +90,11 @@ class ComicsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id) // MODIFICAAAAAAAAAAAA
+    public function update(Request $request, Comic $comic)
     {
         //
+        dump($request);
+        dd($comic);
     }
 
     /**
