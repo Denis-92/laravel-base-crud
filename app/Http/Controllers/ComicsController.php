@@ -41,9 +41,10 @@ class ComicsController extends Controller
     {
         //
         $data= $request->all();
-        //dd($data);
         $newComic = new Comic();
-        $newComic->title = $data['title'];
+        $newComic->fill($data);
+        $newComic->save();
+        return redirect()->route('comics.show', $newComic->id);
     }
 
     /** SECONDA FUNZIONE VISTA
