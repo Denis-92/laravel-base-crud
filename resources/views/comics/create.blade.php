@@ -61,6 +61,10 @@
             </label>
             <input type="text" name="type" id="type">
         </div>
+
+        <div>
+            <input type="submit" value="Invia">
+        </div>
     </form>
 
 </body>
