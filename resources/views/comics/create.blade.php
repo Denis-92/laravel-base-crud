@@ -10,13 +10,19 @@
 
 <body>
 
+    @if ($errors->any())
+        <div>
+            Errors!!!
+        </div>
+    @endif
+
     <form method="post" action="{{ route('comics.store') }}">
         @csrf
         <div>
             <label for="title">
                 Inserisci titolo...
             </label>
-            <input type="text" required name="title" id="title">
+            <input type="text" required maxlength="100" minlength="3" name="title" id="title">
         </div>
 
         <div>
@@ -31,7 +37,7 @@
             <label for="thumb">
                 Inserire url della thumbnail...
             </label>
-            <input type="url" required name="thumb" id="thumb">
+            <input type="url" required maxlength="255" name="thumb" id="thumb">
         </div>
 
         <div>
@@ -45,7 +51,7 @@
             <label for="series">
                 Inserire serie del fumetto...
             </label>
-            <input type="text" required name="series" id="series">
+            <input type="text" required maxlength="70" name="series" id="series">
         </div>
 
         <div>
@@ -59,7 +65,7 @@
             <label for="type">
                 Inserire tipo del fumetto...
             </label>
-            <input type="text" required name="type" id="type">
+            <input type="text" required maxlength="20" name="type" id="type">
         </div>
 
         <div>
