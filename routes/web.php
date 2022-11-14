@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::resource('comics', 'ComicsController');
+
+Route::get('comics/confirm-delete/{comic}', 'ComicsController@confirm')->name('comics.confirm-delete');

@@ -106,4 +106,10 @@ class ComicsController extends Controller
         $comic->delete();
         return redirect()->route('comics.index');
     }
+
+    // confirmation for delete element
+    public function confirm(Comic $comic)
+    {
+        return view('comics.confirm-delete', compact('comic'));
+    }
 }

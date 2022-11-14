@@ -16,11 +16,15 @@
                 <div>{{ $comic->title }}</div>
             </a>
 
-            <form action="{{ route('comics.destroy', $comic->id) }}" method="post">
+            <a href="{{ route('comics.confirm-delete', $comic->id) }}">
+                Cancella
+            </a>
+
+            {{-- <form action="{{ route('comics.destroy', $comic->id) }}" method="post">
                 @csrf
                 @method('DELETE')
                 <input type="submit" value="Cancella" class="delete-button">
-            </form>
+            </form> --}}
             <hr>
         </div>
     @endforeach
